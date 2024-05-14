@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <script src="./src/script.js" defer></script>
+
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div id="music-container">
+      <div class="top-bar">
+        <i class="ph ph-playlist"></i>
+
+        <span class="playing-info"></span>
+
+        <i id="volume-icon" class="ph ph-speaker-high"></i>
+      </div>
+
+      <div class="img-container">
+        <img id="music-img" alt="" />
+      </div>
+
+      <div class="song-details">
+        <p class="name"></p>
+        <p class="artist"></p>
+      </div>
+
+      <div class="progress-container">
+        <div class="progress">
+          <audio id="main-audio"></audio>
+        </div>
+
+        <div class="song-timer">
+          <span class="current-time">00:00</span>
+          <span class="max-duration">00:00</span>
+        </div>
+      </div>
+
+      <div class="controls">
+        <i class="ph ph-shuffle"></i>
+        <i class="ph ph-skip-back"></i>
+        <div class="play-pause">
+          <i id="play-pause-icon" class="ph ph-play"></i>
+        </div>
+        <i class="ph ph-skip-forward"></i>
+        <i class="ph ph-repeat repeat-icon"></i>
+      </div>
+
+      <div class="music-list">
+        <div class="music-list-header">
+          <span>Music list</span>
+          <i class="ph ph-x"></i>
+        </div>
+
+        <ul></ul>
+      </div>
+    </div>
+  </body>
+</html>
